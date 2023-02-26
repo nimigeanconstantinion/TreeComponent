@@ -20,12 +20,7 @@ export default class Tree<T>{
         if (nod.data == data) {
             return nod;
         }
-        // TreeNode<T> left=find(node.getLeft(),data);
-        // if(left!=null){
-        //     return left;
-        // }
-        //
-        // return  find(node.getRight(),data);
+
         if(nod.left){
             let left:Nod<T>|null=this.find(nod.left,data);
             if(left){
@@ -91,16 +86,6 @@ export default class Tree<T>{
 
     }
 
- // public getNextLevel(prevLevel:Nod<Persoana>[]):Nod<Persoana>[]{
- //        let level:Nod<Persoana>[]=[];
- //        prevLevel.map(p=>{
- //            let persL=p.left;
- //            let perR=p.right;
- //            level.push(persL);
- //            level.push(persR);
- //        });
- //        return level;
- //    }
 
 
 }
